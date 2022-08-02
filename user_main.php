@@ -203,6 +203,12 @@ $row1 = $stmt1->fetchAll(PDO::FETCH_ASSOC);
 
   <script>
     console.log("hihihi");
+    console.log("hihihi");
+    console.log("hihihi");
+    console.log("hihihi");
+    console.log("hihihi");
+    console.log("hihihi");
+
   </script>
 
 </body>
