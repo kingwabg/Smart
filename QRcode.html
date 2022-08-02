@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+
+  <div id="qrcode"></div>
+
+  <script src="/davidshimjs-qrcodejs-04f46c6/qrcode.js"></script>
+  <script>
+    var qrcode = new QRCode(document.getElementById("qrcode"), {
+      text: "https://www.naver.com/",
+      width: 200,  //가로
+      height: 200, //세로
+      colorDark: "#000000", //qr에서 어두운 색 (보통 검은색) 
+      colorLight: "#ffffff", //qr에서 밝은 색 (보통 하얀색) colorDark 보다 옅어야한다.
+      correctLevel: QRCode.CorrectLevel.H //qr코드 오류복원능력임 (L->M->Q->H)
+    });
+  </script>
+
+
+
+
+</body>
+
+</html>

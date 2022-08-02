@@ -1,0 +1,178 @@
+body{
+  margin: 0;
+}
+.tab_container {
+    /* padding-bottom: 1em; */
+    background-color: #fff;
+    border:1px solid #37beb0;
+    margin-bottom: 3px ; 
+    display: flex;
+}
+/* header{
+  size: 100%;
+  margin-bottom: 5px;
+  padding: auto;
+} */
+.tab_item {
+  /* width: 30%; */
+  width: calc(100%/2);    /*100%/4を100%/2に変更*/
+  padding:15px 0;
+  border-bottom: 3px solid #37beb0 ;
+  background-color: #ececec;
+  text-align: center;
+  color: #37beb0 ;
+  display: block;
+  float: right;
+  /* text-align: center; */
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+  .tab_item:hover {
+    opacity: 0.75;
+  }
+  input[name="tab_item"] {
+    display: none;
+  }#tab1:checked ~ #tab1_content,
+  #tab2:checked ~ #tab2_content {  /*, #tab3:checked ~ #tab3_content , #tab4:checked ~ #tab4_contentを削除*/
+    display: block;
+  } 
+ 
+.tab_container input:checked + .tab_item {
+    background-color: #37beb0 ;
+    color: #fff;
+}
+.wrapper {
+  position: relative;
+  background: #f5f5f5;
+}
+/* ハンバーガーメニュー */
+.hamburger {
+  width: 30px;
+  height: 30px;
+  background: #000;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 999;
+}
+.hamburger:hover {
+  cursor: pointer;
+}
+.hamburger span {
+  background: #fff;
+  width: 25px;
+  height: 2px;
+  position: absolute;
+  transition: 0.3s ease-out;
+}
+.hamburger span:nth-of-type(1) {
+  top: 15px;
+}
+.hamburger span:nth-of-type(3) {
+  bottom: 15px;
+}
+/* ハンバーガーメニューにactiveクラスがついたときのスタイル */
+.hamburger.active span:nth-of-type(1) {
+  transform: translateY(9px) rotate(-45deg);
+  transition: 0.3s ease-out;
+}
+.hamburger.active span:nth-of-type(3) {
+  transform: translateY(-9px) rotate(45deg);
+  transition: 0.3s ease-out;
+}
+.hamburger.active span:nth-of-type(2) {
+  opacity: 0;
+}
+/* メニュー */
+.menu {
+  width: 150px;
+  background: rgba(138, 135, 135, 0.589);
+  color: #fff;
+  position: absolute;
+  padding-top: 40px;
+  transform: translate(-300px);
+  transition: 0.3s ease-out;
+}
+li {
+  margin-bottom: 10px;
+}
+/* メニューにopenクラスがついたときのスタイル */
+.menu.open {
+  transform: translate(0);
+  transition: 0.3s ease-out;
+}
+
+/*body*/
+body{
+  margin-top: 5px;
+}
+a{
+  text-decoration: none;
+}
+#title,#subtitle{
+  display: flex;
+  text-align: left;
+}
+#title{
+  height: 50%;
+}
+#subtitle{
+  height: 25%;
+}
+
+.coupon{
+  box-shadow: 2px 2px 4px gray;
+  height: 30%;
+  margin: 24px 5px;
+}
+.coupon h1,h2{
+  float: left;
+  margin: 0 0 5px 5px;
+  /*margin-right: 60%; */
+  width: 60%;
+  
+}
+.coupon h1{
+  font-size: 2em;
+  padding: 0.1em 0.5em;/*上下 左右の余白*/
+  color: #494949;/*文字色*/
+  background: transparent;/*背景透明に*/
+  border-left: solid 5px #7db4e6;/*左線*/
+}
+.coupon h2{
+  font-size:larger;
+  padding: 0.1em 0.5em;/*上下 左右の余白*/
+  color: #494949;/*文字色*/
+  background: transparent;/*背景透明に*/
+  border-left: solid 5px #7db4e6;/*左線*/
+}
+.coupon div p{
+  float: right;
+  width: 40%;
+  font-size: medium;
+  margin:0 0 5px 5px ;
+}
+/* #border{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  content: '';
+  background-image: -webkit-repeating-linear-gradient(135deg, #000, #000 1px, transparent 2px, transparent 5px);
+  background-image: repeating-linear-gradient(-45deg, #000, #000 1px, transparent 2px, transparent 5px);
+  background-size: 7px 7px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+} */
+
+#contents{
+  height: 15%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  border-top: 6px double #000;
+  background: #f4f4f4;
+}

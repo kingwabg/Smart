@@ -1,0 +1,28 @@
+.row-md-4 {
+  display: inline-block;
+  margin: 3px;
+}
+
+.nav-item {
+  font-size: x-large;
+}
+
+main {
+  float: left;
+}
+
+aside {
+  height: 200px;
+  width: 15%;
+  float: right;
+}
+
+footer {
+  width: 800px;
+  height: 50px;
+  margin: auto;
+  clear: both;
+}
+.btn btn-primary {
+  width: 10%;
+}

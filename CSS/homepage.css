@@ -1,0 +1,205 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  position: relative;
+  background:white;
+  background-size:cover;
+}
+header{
+  position:absolute;
+  top: 0;
+  left: 250px;
+  width: 140%;
+  padding: 60px 150px;
+  display: flex;
+  align-items: center;
+}
+
+.content{
+width: 300px;
+height: 300px;
+}
+
+#slider-wrap {
+  position:absolute; left:300px; 
+  position:relative;
+  width: 80%;
+
+}
+#slider {
+  position:relative;
+  height: 60vh;
+  max-height: 500px;
+  overflow: hidden;
+  margin:auto;
+}
+#dropdown {
+width: 120px
+}
+#dropdown li{
+margin: 2px;
+}
+
+.title{
+  text-align: center;
+  font-family:"Florence, cursive"; 
+}
+
+h3{
+  text-align: center;
+  font-family:"Florence, cursive"; 
+}
+.image{
+  text-align: center;
+  width: 100%;
+  position:relative;
+  left: 150px;
+  bottom:350px;
+}
+.btn{
+  font-size: 1em;
+  color: #FFF;
+  background: #FF0157;
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  transition: 0.5s;
+  }
+  .btn:hover{
+      letter-spacing: 6px;
+  }
+
+button {
+  position: relative;
+  appearance: none;
+  background: #f72359;
+  padding: 1em 2em;
+  border: none;
+  color: white;
+  font-size: 0.6em;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  border-radius: 100px;
+}
+
+button:hover{
+background: linear-gradient(to right, #4554c5, #e33f4a); 
+}
+
+.dropdownmenu ul, .dropdownmenu li {
+margin: 0;
+padding: 0;
+}
+.dropdownmenu ul {
+background: gray;
+list-style: none;
+right: 120;
+width: 100%;
+}
+.dropdownmenu li {
+float: left;
+position: relative;
+width:auto;
+}
+.dropdownmenu a {
+background: #af77b0;
+color: #FFFFFF;
+display: block;
+font: bold 12px/20px sans-serif;
+padding: 10px 40px;
+text-align: center;
+text-decoration: none;
+}
+.dropdownmenu li:hover a {
+background: #3530d8;
+}
+#submenu {
+left: 0;
+opacity: 0;
+position: absolute;
+top: 35px;
+visibility: hidden;
+z-index: 1;
+}
+li:hover ul#submenu {
+opacity: 1;
+top: 40px;	/* adjust this as per top nav padding top & bottom comes */
+visibility: visible;
+}
+.contact{
+background: url("../images/bg3.jpg");
+background-size: contain;
+}
+.contactForm{
+padding: 20px 20px;
+background: rgb(239, 129, 180);
+box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+max-width: 500px;
+margin-top: 50px;
+}
+.contactForm h3{
+color: #111;
+font-size: 1.2em;
+margin-bottom: 20px;
+font-weight: 500;
+}
+.contactForm .inputBox{
+position: relative;
+width: 100%;
+margin-bottom: 20px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+width: 100%;
+border: 1px solid #555;
+padding: 10px;
+color:#111;
+outline: none;
+font-size: 16px;
+font-weight: 200;
+resize: none;
+}
+.contactForm .inputBox input[type="submit"]{
+font-size: 1em;
+color: #FFF;
+background: #3831c1;
+display: inline-block;
+text-transform: uppercase;
+letter-spacing: 2px;
+text-decoration: none;
+transition: 0.5s;
+max-width: 100px;
+font-weight: 500;
+cursor: pointer;
+}
+
+#footer {
+background-color:black;
+color:white;
+clear:both;
+text-align:center;
+padding:5px;
+}
+header .logo{
+  color: #fff;
+  font-weight: 700;
+  font-size: 2em;
+  text-decoration: none;
+}
+header.sticky .logo{
+  color: #111;
+}

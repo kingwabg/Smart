@@ -1,0 +1,10 @@
+<?php
+    session_start();
+    $_SESSION=array();
+    session_destroy();
+    header('Location:login.php');
+?>
+<script>
+    //今だけ。リセット
+    localStorage.clear();
+</script>

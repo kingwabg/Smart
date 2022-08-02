@@ -1,0 +1,1 @@
+// Just, joking... Why use Javascript? You already have CSS3 :)

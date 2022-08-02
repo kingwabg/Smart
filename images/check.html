@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>선택에 따른 페이지 이동</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script language="javascript">
+
+        function check() {
+            var form = document.form1;
+            //첫번째 라디오 버튼을 선택한 경우
+            if (form.ex[0].checked == true) {
+                //현재 폼의 action 값을 menu_1.html이라는 파일로 만든다
+                form.action = "publish.php";
+            }
+            //두번째 라디오 버튼을 선택한 경우
+            else if (form.ex[1].checked == true) {
+                form.action = "publish.php";
+                // form.action = "menu_2.html";
+            }
+            else {
+                form.action = "menu_3.html";
+            }
+            form.submit();
+        }
+    </script>
+</head>
+
+<body bgcolor="#ffffff">
+    <link rel="stylesheet" href="CSS/super-awesome.css">
+    <p>クーポンタイプをチェックしてください。 </p>
+    <div class="cc-selector">
+        <form name="form1" method="post">
+            <input id="visa" type="radio" name="ex" value="visa" />
+            <label class="drinkcard-cc visa" for="visa"></label>
+            <input id="mastercard" type="radio" name="ex" value="mastercard" />
+            <label class="drinkcard-cc mastercard" for="mastercard"></label>
+            &nbsp;&nbsp; <a href="javascript:check()">確認</a>
+        </form>
+    </div>
+
+</body>
+
+</html>
