@@ -201,15 +201,7 @@ $row1 = $stmt1->fetchAll(PDO::FETCH_ASSOC);
     </nav>
   </aside>
 
-  <script>
-    console.log("hihihi");
-    console.log("hihihi");
-    console.log("hihihi");
-    console.log("hihihi");
-    console.log("hihihi");
-    console.log("hihihi");
-
-  </script>
+  <!-- 없어없어 ! ! 여기서 작업 하는거야 섹 -->
 
 </body>
 
