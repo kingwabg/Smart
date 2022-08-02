@@ -49,6 +49,7 @@ $row1 = $stmt1->fetchAll(PDO::FETCH_ASSOC);
 
 </head>
 
+
 <body>
 
   <header>
@@ -200,18 +201,22 @@ $row1 = $stmt1->fetchAll(PDO::FETCH_ASSOC);
     </nav>
   </aside>
 
-  <!-- <footer>
-    <nav aria-label="Page navigation example">
-      <ul class="pagination">
-        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-        <li class="page-item"><a class="page-link" href="#">1</a></li>
-        <li class="page-item"><a class="page-link" href="#">2</a></li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
-        <li class="page-item"><a class="page-link" href="#">Next</a></li>
-      </ul>
-    </nav>
-  </footer> -->
+  <script>
+    console.log("hihihi");
+  </script>
 
 </body>
+
+<!-- <footer>
+  <nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+  </nav>
+</footer> -->
 
 </html>
